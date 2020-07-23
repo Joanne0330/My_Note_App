@@ -9,12 +9,21 @@
 </head>
 <body>
   <h1>Notes App</h1>
-  <div id="app">
-    hello
-    <!-- <form>
-      <input type="text"><br>
-      <input type="submit" value="Click">
-    </form>  -->
-  </div>
+
+  <textarea type="input" maxlength="250" rows="10" cols="50" id="user_input" placeholder="Enter text here..."></textarea>
+
+
+  <input type="button" onclick="set()" value="Submit">
+  <p id="myText"></p>
+  <!-- <script>
+  
+    function textInput(){
+      var userInput = document.getElementById('user_input').value;
+      document.getElementById('myText').textContent = userInput;
+    }
+  
+
+  </script> -->
+      
 </body>
 </html>

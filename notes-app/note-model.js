@@ -1,8 +1,9 @@
 "use strict";
 
+
 class NoteModel {
   constructor() {
-    this._text = "";
+    this.text = "";
   }
 
   getText() {
@@ -10,8 +11,17 @@ class NoteModel {
   }
 
   set(text) {
-    text = document.getElementById("app");
-    this._text = text;
-  }
+    this.text = text.id
+    this.text = document.getElementById("user_input").value;
+    document.getElementById("myText").innerHTML = this.texttext;
+    // this._text = text;
+  };
+
+  // print_list() {
+  //   var text1 = document.getElementById("app").value;
+  //   document.getElementById("list").innerHTML = text1;
+
+  // }
 
 }
+note = new NoteModel();
